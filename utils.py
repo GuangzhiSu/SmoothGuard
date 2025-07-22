@@ -29,12 +29,28 @@ def load_image(image_path):
 
 def _apply_random_smoothing(images, sigma, num_copy):
     noisy_images = []
-    for image in images:
+    
+    # Handle different input formats
+    if images.dim() == 2:
+        # Qwen format: [height*width, channels] -> treat as single image
         for _ in range(num_copy):
-            noise = torch.randn_like(image) * sigma
-            noisy_image = image + noise
+            noise = torch.randn_like(images) * sigma
+            noisy_image = images + noise
             noisy_images.append(noisy_image)
-    return torch.stack(noisy_images, dim=0)
+        noisy_images.append(images)  # Add original image
+        return torch.stack(noisy_images, dim=0)  # [num_images, height*width, channels]
+    
+    elif images.dim() == 4:
+        # Standard format: [batch, channels, height, width]
+        for image in images:
+            for _ in range(num_copy):
+                noise = torch.randn_like(image) * sigma
+                noisy_image = image + noise
+                noisy_images.append(noisy_image)
+            noisy_images.append(image)
+        return torch.stack(noisy_images, dim=0)
+    else:
+        raise ValueError(f"Unsupported image format: {images.dim()}")
 
 def get_roberta_embeddings(text, roberta_tokenizer, roberta_model):
     inputs = roberta_tokenizer(text, return_tensors='pt', padding=True, truncation=True, max_length=128).to('cuda')
