@@ -13,13 +13,13 @@
 # （如果你的集群不会自动设置 CUDA_VISIBLE_DEVICES，也可以手动指定）
 export CUDA_VISIBLE_DEVICES=4
 
-# python3 /home/gs285/MLLM-defense-using-random-smoothing/eval/model_vqa_loader.py \
-#     --model-path liuhaotian/llava-v1.5-13b \
-#     --question-file /home/gs285/MLLM-defense-using-random-smoothing/eval/pope/llava_pope_test.jsonl \
-#     --image-folder /home/gs285/MLLM-defense-using-random-smoothing/eval/pope/val2014 \
-#     --answers-file /home/gs285/MLLM-defense-using-random-smoothing/eval/pope/answers/llava-v1.5-13b.jsonl \
-#     --temperature 0 \
-#     --conv-mode vicuna_v1
+python3 /home/gs285/MLLM-defense-using-random-smoothing/eval/model_vqa_loader_normal.py \
+    --model-path liuhaotian/llava-v1.5-13b \
+    --question-file /home/gs285/MLLM-defense-using-random-smoothing/eval/pope/llava_pope_test.jsonl \
+    --image-folder /home/gs285/MLLM-defense-using-random-smoothing/eval/pope/val2014 \
+    --answers-file /home/gs285/MLLM-defense-using-random-smoothing/eval/pope/answers/llava-v1.5-13b.jsonl \
+    --temperature 0 \
+    --conv-mode vicuna_v1
 
 python3 /home/gs285/MLLM-defense-using-random-smoothing/eval/pope/eval_pope.py \
     --annotation-dir /home/gs285/MLLM-defense-using-random-smoothing/eval/pope/coco \
