@@ -20,9 +20,10 @@ print("Model loaded.")
 def get_eval(content: str, max_tokens: int):
     """Evaluate the content using Qwen model."""
     messages = [
-        {"role": "system", "content": "You are a helpful and precise assistant for checking the quality of the answer."},
-        {"role": "user", "content": content},
+    {"role": "system", "content": "You are a precise assistant. Respond with ONLY two numbers (scores) separated by a space on the first line (e.g., '9 10'). Then provide an explanation after a blank line."},
+    {"role": "user", "content": content},
     ]
+
 
     text = tokenizer.apply_chat_template(
         messages,
