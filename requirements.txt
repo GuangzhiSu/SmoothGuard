@@ -1,0 +1,16 @@
+torch
+transformers
+scikit-learn
+numpy
+Pillow
+tqdm
+shortuuid
+accelerate
+torchvision
+decord
+av
+pandas
+fire
+
+# If you use Qwen-VL, ensure qwen_vl_utils.py is available in your PYTHONPATH or install from the appropriate source.
+# If you use LLaVA, install the official or custom LLaVA package as needed (not on PyPI as of writing). 

@@ -1,6 +1,6 @@
 # MLLM Defense Using Random Smoothing
 
-A robust defense mechanism for Multimodal Large Language Models (MLLMs) using randomized smoothing. This repository enables robust answer selection for Visual Question Answering (VQA) by adding noise to input images, generating multiple outputs, and clustering results to select the most representative answer. Supports models like LLaVA and BLIP-2 via HuggingFace Transformers.
+A robust defense mechanism for Multimodal Large Language Models (MLLMs) using randomized smoothing. This repository enables robust answer selection for Visual Question Answering (VQA) by adding noise to input images, generating multiple outputs, and clustering results to select the most representative answer. Supports models like Qwen, BLIP-2, and others via HuggingFace Transformers.
 
 ---
 
@@ -8,8 +8,8 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Usage](#usage)
 - [Evaluation](#evaluation)
 - [Notes](#notes)
 - [Citation](#citation)
@@ -21,7 +21,7 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
 ## Features
 
 - **Randomized Smoothing**: Adds noise to images for robust inference.
-- **Model Support**: Works with LLaVA, BLIP-2, and other HuggingFace models.
+- **Model Support**: Works with Qwen, BLIP-2, and other HuggingFace models.
 - **Clustering-based Answer Selection**: Selects robust answers from multiple noisy outputs.
 - **Flexible Evaluation**: Tools for VQA evaluation and noisy image inspection.
 
@@ -39,7 +39,31 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
    ```bash
    pip install -r requirements.txt
    ```
-   - Required: `transformers`, `torch`, `scikit-learn`, etc.
+
+---
+
+## Project Structure
+
+```
+MLLM-defense-using-random-smoothing/
+├── experiment.py                  # Sigma sweep experiments
+├── experiments.sh                 # Example batch script for experiments
+├── inference.py                   # Inference with random smoothing
+├── models.txt                     # List of supported models
+├── utils.py                       # Utility functions
+├── requirements.txt               # Python dependencies
+├── eval/
+│   ├── model_vqa_loader_new.py    # VQA evaluation with smoothing
+│   ├── model_vqa_loader_normal.py # VQA evaluation (baseline)
+│   ├── pope/                      # POPE benchmark and scripts
+│   └── bench-in-the-wild/         # Bench-in-the-wild benchmark and scripts
+├── llava_provided/
+│   ├── scripts/                   # LLaVA-related scripts (finetuning, conversion, etc.)
+│   └── data/                      # Example datasets for various benchmarks
+├── .gitignore
+├── README.md
+└── ...
+```
 
 ---
 
@@ -47,7 +71,7 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
 
 ### 1. Prepare Data
 
-- Place your images and prompt files (e.g., `.jsonl`) in the `data/` directory.
+- Place your images and prompt files (e.g., `.jsonl`) in the appropriate data folders (see `llava_provided/data/` for examples).
 
 ### 2. Run Inference
 
@@ -62,57 +86,50 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
   ```bash
   python experiment.py --hf-model-name <model> --image_file <img> --prompt-file <jsonl> --sigma-list <list>
   ```
-
 - Example batch run:
   ```bash
   bash experiments.sh
   ```
 
-### 4. Evaluate on VQA
+### 4. Evaluate on VQA Benchmarks
 
-- Evaluate using the provided loader:
-  ```bash
-  python eval/model_vqa_loader_new.py --image-folder <dir> --question-file <jsonl> --output-file <out.jsonl>
-  ```
+- **POPE Benchmark:**
+  - Run the loader:
+    ```bash
+    python eval/model_vqa_loader_normal.py --hf-model-name <model> --image-folder <dir> --question-file <jsonl> --answers-file <out.jsonl>
+    ```
+  - Evaluate results:
+    ```bash
+    python eval/pope/eval_pope.py --annotation-dir <coco_dir> --question-file <jsonl> --result-file <out.jsonl>
+    ```
 
-### 5. Check Outputs
+- **Bench-in-the-Wild:**
+  - Run the loader:
+    ```bash
+    python eval/bench-in-the-wild/eval_wildbench_qwen.py
+    ```
+  - Summarize results:
+    ```bash
+    python eval/bench-in-the-wild/summarize_gpt_review.py -f <review_file.jsonl>
+    ```
 
-- Results are saved as `.jsonl` files.
-- Noisy images for inspection are saved in `noisy_samples/` by the evaluation script.
-
----
-
-## Project Structure
-
-```
-MLLM-defense-using-random-smoothing/
-├── inference.py                # Inference with random smoothing
-├── experiment.py               # Sigma sweep experiments
-├── experiments.sh              # Example batch script
-├── utils.py                    # Utility functions
-├── models.txt                  # List of supported models
-├── eval/
-│   └── model_vqa_loader_new.py # VQA evaluation script
-├── data/                       # Place your data here
-├── scripts/                    # Additional scripts
-├── noisy_samples/              # Saved noisy images (output)
-├── .gitignore
-└── ...
-```
+- Example answer and review files can be found in `eval/pope/answers/` and `eval/bench-in-the-wild/answers/` and `eval/bench-in-the-wild/reviews/`.
 
 ---
 
 ## Evaluation
 
-- **Robustness**: The system evaluates model robustness by clustering outputs from multiple noisy samples and selecting the most representative answer.
+- **Robustness**: Evaluates model robustness by clustering outputs from multiple noisy samples and selecting the most representative answer.
 - **Metrics**: Outputs are in `.jsonl` format for easy analysis. Noisy images are saved for qualitative inspection.
-- **Custom Evaluation**: You can adapt `eval/model_vqa_loader_new.py` for your own datasets or evaluation protocols.
+- **Benchmarks**: Includes scripts and data for POPE and Bench-in-the-Wild evaluations.
 
 ---
 
 ## Notes
 
 - All model loading and inference is done via HuggingFace Transformers.
+- For Qwen-VL, ensure `qwen_vl_utils.py` is available in your PYTHONPATH or install from the appropriate source.
+- For LLaVA, install the official or custom LLaVA package as needed (not on PyPI as of writing).
 - For detailed script arguments, run any script with `--help`.
 
 ---
