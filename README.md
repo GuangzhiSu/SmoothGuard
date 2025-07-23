@@ -93,27 +93,27 @@ MLLM-defense-using-random-smoothing/
 
 ### 4. Evaluate on VQA Benchmarks
 
+There are two evaluation modes for VQA benchmarks:
+- **Normal Inference**: Standard model inference without added noise.
+- **Inference with Noise (Randomized Smoothing)**: Model inference with noise added to the input images for robustness evaluation.
+
+For both POPE and Bench-in-the-Wild benchmarks, you can run the provided bash scripts in each folder to perform the evaluation end-to-end:
+
 - **POPE Benchmark:**
-  - Run the loader:
+  - Run the evaluation (normal or with noise) by executing the bash script:
     ```bash
-    python eval/model_vqa_loader_normal.py --hf-model-name <model> --image-folder <dir> --question-file <jsonl> --answers-file <out.jsonl>
-    ```
-  - Evaluate results:
-    ```bash
-    python eval/pope/eval_pope.py --annotation-dir <coco_dir> --question-file <jsonl> --result-file <out.jsonl>
+    bash eval/pope/model_pope_loader_normal.sh   # For normal inference
+    bash eval/pope/model_pope_loader_new.sh      # For inference with noise
     ```
 
 - **Bench-in-the-Wild:**
-  - Run the loader:
+  - Run the evaluation (normal or with noise) by executing the bash script:
     ```bash
-    python eval/bench-in-the-wild/eval_wildbench_qwen.py
-    ```
-  - Summarize results:
-    ```bash
-    python eval/bench-in-the-wild/summarize_gpt_review.py -f <review_file.jsonl>
+    bash eval/bench-in-the-wild/llavabench_normal.sh  # For normal inference
+    bash eval/bench-in-the-wild/llavabench_new.sh     # For inference with noise
     ```
 
-- Example answer and review files can be found in `eval/pope/answers/` and `eval/bench-in-the-wild/answers/` and `eval/bench-in-the-wild/reviews/`.
+The scripts will handle the full evaluation pipeline, including running the model and saving outputs. Example answer and review files can be found in the corresponding `answers/` and `reviews/` subfolders.
 
 ---
 
