@@ -1,0 +1,2022 @@
+Using device: cuda:0
+Loading model and processor...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:05,  1.44s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:02,  1.03it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.23it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.90it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.44it/s]
+Loading benchmark data...
+Evaluating 400 samples...
+Evaluating:   0%|          | 0/400 [00:00<?, ?it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+/home/gs285/miniconda3/envs/llava/lib/python3.10/site-packages/transformers/generation/utils.py:2505: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cpu, whereas the model is on cuda. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cuda') before running `.generate()`.
+  warnings.warn(
+Evaluating:   0%|          | 1/400 [00:01<07:48,  1.17s/it]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:   3%|▎         | 11/400 [00:01<00:33, 11.45it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:   5%|▍         | 19/400 [00:01<00:18, 20.51it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:   8%|▊         | 30/400 [00:01<00:10, 34.22it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Selected audio file: 1_trip.wav
+Selected caption: The growl of a tiger amidst human conversation.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 2.wav
+Selected caption: The clucking of chickens succeeded by the discourse of a man.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 3_rev.wav
+Selected caption: People conversing concludes with a lion's roar
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 4_rev.wav
+Selected caption: Human conversation preceding the growling and barking of a dog.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 5.wav
+Selected caption: A horse neighing preceding the chatter of people.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 6_rev.wav
+Selected caption: A man's conversation preceding a barking dog.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 7_trip.wav
+Selected caption: A communicating person alongside a bleating goat.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 8.wav
+Selected caption: A mooing cow followed by conversing people.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 9_rev.wav
+Selected caption: People conversing, succeeded by a horse neighing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 10.wav
+Selected caption: A barking dog followed by a man conversing
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 11_rev.wav
+Selected caption: A man talking succeeded by a barking dog.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 12.wav
+Selected caption: A croaking frog, subsequently followed by a conversing man.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 13.wav
+Selected caption: A caterwauling cat preceding a person's speech.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 14.wav
+Selected caption: A howling dog, soon after joined by a speaking woman.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 15_trip.wav
+Selected caption: A horse neighing amidst a man's discourse.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 16.wav
+Selected caption: An animal's howl concludes with human chatter.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 17.wav
+Selected caption: Roaring of an animal concluded by melodious singing of people.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 18.wav
+Selected caption: A man's speech following the clucking of a chicken.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 19_rev.wav
+Selected caption: A conversing female followed by a panting dog.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 20_rev.wav
+Selected caption: A conversing man followed by a mooing cow.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 21_trip.wav
+Selected caption: People speaking intermingled with a bleating goat.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 22_rev.wav
+Selected caption: A man conversing capped off by a growling dog.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 23_rev.wav
+Selected caption: A conversing man followed by a purring cat.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 24_rev.wav
+Selected caption: A ringing telephone preceding background noise
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 25.wav
+Selected caption: A chiming doorbell followed by melodious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 25.wav
+Selected caption: A doorbell chiming, then music resonating
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 27_rev.wav
+Selected caption: Melodious music followed by a chiming doorbell.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 28.wav
+Selected caption: A doorbell chime followed by melodious tunes.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 28.wav
+Selected caption: A chiming doorbell followed by melodious music
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 27_rev.wav
+Selected caption: Melodious music is followed a doorbell ringing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 31.wav
+Selected caption: A doorbell chiming before a symphony of music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 26_rev.wav
+Selected caption: Melodic tunes succeeded by a ringing doorbell
+Selected correct answer: 1
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  10%|█         | 40/400 [00:01<00:07, 46.04it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  12%|█▏        | 49/400 [00:01<00:06, 54.22it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  15%|█▍        | 59/400 [00:01<00:05, 63.09it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 31.wav
+Selected caption: A doorbell echoing followed by rhythmic music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 25_rev.wav
+Selected caption: Melodic tunes succeeded by a chiming doorbell.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 26_rev.wav
+Selected caption: Harmonious music followed by a chiming doorbell.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 27_rev.wav
+Selected caption: A melody playing, then interrupted by a chiming doorbell.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 37.wav
+Selected caption: A ringing doorbell succeeded by melodious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 37.wav
+Selected caption: A chiming doorbell succeeded by melodic music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 27_rev.wav
+Selected caption: Harmonious music plays, to be followed by a chiming doorbell.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 40_rev.wav
+Selected caption: A distinct pop, succeeded by a growling tiger.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 41.wav
+Selected caption: An animal's groan followed by a distinct gunshot.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 42_rev.wav
+Selected caption: A loud gunshot followed by a neighing horse.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 43_rev.wav
+Selected caption: Echoing gunfire followed by chirping birds.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 44.wav
+Selected caption: Water flowing from a tap, followed by an individual conversing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 45.wav
+Selected caption: Rainfall succeeded by an individual talking.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 46.wav
+Selected caption: Water splashing followed by a person talking.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 47_rev.wav
+Selected caption: A person's speech succeeded by a downpour.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 48.wav
+Selected caption: Water cascading preceded by a person talking.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 49.wav
+Selected caption: Droplets of water hitting a bucket followed by a person conversing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 50.wav
+Selected caption: A downpour followed by an individual's melody.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 51_rev.wav
+Selected caption: Human conversation followed by water surface footsteps.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 52_rev.wav
+Selected caption: The clatter of equipment superseded by the gust of wind
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 53.wav
+Selected caption: Background noise followed by a man's dialogue
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 54.wav
+Selected caption: A revving engine succeeded by a person talking
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 55_rev.wav
+Selected caption: A man's dialogue followed by a revving engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 56.wav
+Selected caption: An engine revving up, culminating in a human voice.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 57_rev.wav
+Selected caption: A woman's voice followed by a thunderous boom
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 58_rev.wav
+Selected caption: A person's melody followed by a resonating boom.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 59.wav
+Selected caption: The roar of a revving engine followed by a man's dialogue
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 60.wav
+Selected caption: An engine revving and accelerating, succeeded by people conversing
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 61.wav
+Selected caption: A vehicle revving up followed by a man's monologue.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 62_rev.wav
+Selected caption: A talking man followed by a revving engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 63.wav
+Selected caption: A vehicle revving up followed by people chattering
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  17%|█▋        | 68/400 [00:01<00:04, 69.33it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  19%|█▉        | 77/400 [00:02<00:04, 72.28it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  22%|██▏       | 86/400 [00:02<00:04, 75.19it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Selected audio file: 59_rev.wav
+Selected caption: A person's speech followed by the revving of an engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 12_rev.wav
+Selected caption: A man's dialogue interrupted by subsequent background noise
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 66.wav
+Selected caption: An accelerating engine followed by a speaking male.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 67.wav
+Selected caption: A thunderous boom succeeded by a person conversing
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 68_rev.wav
+Selected caption: A man's dialogue followed by an accelerating, revving engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 69_rev.wav
+Selected caption: Hearty laughter followed by an engine roaring and accelerating.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 70.wav
+Selected caption: An engine revving and accelerating, followed by a man speaking.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 71_rev.wav
+Selected caption: A man speaking, followed by the revving of an engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 72.wav
+Selected caption: Background noise giving way to a person's song
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 73.wav
+Selected caption: An engine revving succeeded by a man conversing
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 74_rev.wav
+Selected caption: An individual speaking succeeded by an engine revving.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 75_rev.wav
+Selected caption: A talking man followed by a revving engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 76.wav
+Selected caption: A roaring engine followed by a person's laughter.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 77.wav
+Selected caption: A gust of wind over the microphone followed by a man's speech
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 78_rev.wav
+Selected caption: A person's dialogue followed by the tinkling of a wind chime
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 79.wav
+Selected caption: The sound of wind and rain ceasing, followed by a man's speech
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 80.wav
+Selected caption: Gusty winds hitting a microphone, later accompanied by a man's dialogue.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 81.wav
+Selected caption: Background disturbance concluded by a barking dog.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 82.wav
+Selected caption: A loud boom succeeded by an animal's sneeze
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 83_rev.wav
+Selected caption: The bleating of a goat followed by a distant boom.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 84.wav
+Selected caption: Background noise followed by a bleating goat
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 85.wav
+Selected caption: An explosion followed by the chirping of birds.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 86.wav
+Selected caption: The roar of an engine followed by the melody of chirping birds.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 87.wav
+Selected caption: Background noise preceded by chirping.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 88_rev.wav
+Selected caption: The sound of a doorbell ringing followed by an animal's screech
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 89_rev.wav
+Selected caption: The clinking of bells followed by animal noises.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 90_rev.wav
+Selected caption: A ringing bell prior to a grunting pig
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 91_rev.wav
+Selected caption: The sound of scraping followed by a bleating goat.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 92_rev.wav
+Selected caption: Footsteps of a walking person followed by a barking dog.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 93_rev.wav
+Selected caption: The sound of a tap filling with water, followed by birdsong.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 94_rev.wav
+Selected caption: Resonating impact sounds followed by a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  24%|██▍       | 95/400 [00:02<00:04, 75.03it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  26%|██▌       | 104/400 [00:02<00:04, 72.71it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  28%|██▊       | 112/400 [00:02<00:03, 73.56it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  30%|███       | 120/400 [00:02<00:03, 71.94it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Selected audio file: 95_rev.wav
+Selected caption: A resonating thud followed by a man chattering.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 96.wav
+Selected caption: A man talking followed by a resonating thud.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 97.wav
+Selected caption: A woman's dialogue followed by a scratching sound
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 98.wav
+Selected caption: A chatting man followed by a resounding thud.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 99.wav
+Selected caption: A man's speech followed by a harmonious melody
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 100.wav
+Selected caption: A man orating, followed by a resonating clunk
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 101_rev.wav
+Selected caption: Audible rustling followed by a person conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 102.wav
+Selected caption: A man conversing, followed by a click.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 103_rev.wav
+Selected caption: Static white noise followed by human chatter.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 104_rev.wav
+Selected caption: A click, then a man conversing
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 105.wav
+Selected caption: A murmuring voice followed by distinct scratching.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 106.wav
+Selected caption: A man's speech followed by background rustling.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 107_rev.wav
+Selected caption: Bustling traffic trailed by human chatter
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 108.wav
+Selected caption: A man conversing, followed by a resounding thud.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 109_rev.wav
+Selected caption: A ticking sound followed by human conversation.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 110_rev.wav
+Selected caption: The sound of writing, succeeded by a woman speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 111_rev.wav
+Selected caption: A bouncing basketball followed by a speaking man.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 112_rev.wav
+Selected caption: The rhythmic clicking followed by a man's speech
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 113.wav
+Selected caption: A human voice transitioning into music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 114_rev.wav
+Selected caption: Persistent ticking followed by a woman's voice
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 115_rev.wav
+Selected caption: A resonating thud followed promptly by a person conversing
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 116_rev.wav
+Selected caption: The sound of a gunshot followed by a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 117.wav
+Selected caption: A human converses followed by melodious music
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 118_rev.wav
+Selected caption: Consecutive thuds followed by a person conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 119.wav
+Selected caption: A man articulating words followed by the shattering of glass.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 120.wav
+Selected caption: A woman's voice followed by a snapping sound
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 121.wav
+Selected caption: Birdsong concluding with serene whistling.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 122_rev.wav
+Selected caption: Joyful laughter followed by a bird's call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 123.wav
+Selected caption: Birdsong followed by applause
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 124.wav
+Selected caption: A crow's call followed by quiet respiration.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 125.wav
+Selected caption: Birdsong precedes human footsteps.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 126.wav
+Selected caption: A subtle human whisper following a bird's call.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  32%|███▏      | 128/400 [00:02<00:03, 72.24it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  34%|███▍      | 136/400 [00:02<00:03, 71.20it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  36%|███▌      | 144/400 [00:02<00:03, 69.85it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  38%|███▊      | 152/400 [00:03<00:03, 68.56it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Selected audio file: 127.wav
+Selected caption: A bird's call preceding human laughter and giggles.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 128_rev.wav
+Selected caption: A human coughing and sneezing followed by a bird tweeting.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 129_rev.wav
+Selected caption: A whistle culminating in a chirping bird.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 72_rev.wav
+Selected caption: A playing song succeeding a background disturbance.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 131_rev.wav
+Selected caption: Melodious tunes followed by background noise.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 132_rev.wav
+Selected caption: The melody of music ended with a resounding boom.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 133.wav
+Selected caption: Background disturbance succeeded by melodious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 134_rev.wav
+Selected caption: Melody of music followed by the explosion of a bomb
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 61.wav
+Selected caption: An engine revving succeeded by melodious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 136.wav
+Selected caption: An engine revving succeeded by melodious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 137.wav
+Selected caption: Background disturbance culminating in melodious music
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 138.wav
+Selected caption: A resonating explosion followed by melodious tunes.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 139.wav
+Selected caption: Background noise followed by melodious tunes
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 140.wav
+Selected caption: A resonating boom followed by melodious tunes.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 141_rev.wav
+Selected caption: The ringing of a bell followed by a woman's speech.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 142.wav
+Selected caption: A conversing woman followed by a ringing bell.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 143_rev.wav
+Selected caption: The ringing of a bell, followed by a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 144.wav
+Selected caption: A human conversing then a bell tolling.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 145_rev.wav
+Selected caption: A bell's ring prior to a man speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 146_rev.wav
+Selected caption: A sounding bell followed by a choir singing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 147_trip.wav
+Selected caption: A woman chattering while a bell resonates
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 148_rev.wav
+Selected caption: A bell's resonant ringing prior to a man vocalizing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 149.wav
+Selected caption: A man's discourse followed by a tolling bell.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 150_trip.wav
+Selected caption: A man's speech intermixed with the ringing of a bell.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 151_rev.wav
+Selected caption: A person's speech echoing after the chimes of a bell.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 152_rev.wav
+Selected caption: A beeping vehicle succeeded by a revving engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 153.wav
+Selected caption: An engine revving followed by the skid of tires.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 154_rev.wav
+Selected caption: The sound of tires skidding on the road succeeded by an engine revving.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 155.wav
+Selected caption: An engine revving succeeded by a tire skidding.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 156.wav
+Selected caption: A revving engine followed by tires skidding on the road.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 157.wav
+Selected caption: A revving engine leading into a tire squeak.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 158_rev.wav
+Selected caption: A faint electric hum followed by background noise.
+Selected correct answer: 1
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  40%|███▉      | 159/400 [00:03<00:03, 65.71it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  42%|████▏     | 166/400 [00:03<00:03, 65.35it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  43%|████▎     | 173/400 [00:03<00:03, 66.02it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  45%|████▌     | 180/400 [00:03<00:03, 65.27it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  47%|████▋     | 187/400 [00:03<00:03, 65.31it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 159.wav
+Selected caption: Background noise followed by buzzing electrical equipment.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 160.wav
+Selected caption: An accelerating engine succeeded by tires skidding
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 161_rev.wav
+Selected caption: A squeaking tire followed by a revving engine
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 162.wav
+Selected caption: A thunderous explosion followed by a ticking device.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 163_rev.wav
+Selected caption: A beeping device followed by background disturbance.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 156_rev.wav
+Selected caption: Dragging tires followed by an accelerating engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 165.wav
+Selected caption: An accelerating engine succeeded by tires skidding on the road
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 166.wav
+Selected caption: An engine revving succeeded by squeaking tires.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 155_rev.wav
+Selected caption: Tires screeching on road preceding a revving engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 168.wav
+Selected caption: An engine revving and accelerating, then followed by the tires squealing
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 169_rev.wav
+Selected caption: A bark concludes with chirping.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 170_rev.wav
+Selected caption: Mooing cow concluded by clucking chickens.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 171_rev.wav
+Selected caption: A dominating roar before the charming chirps and tweets.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 172.wav
+Selected caption: A chirping bird preceding a mooing cow.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 173_rev.wav
+Selected caption: A horse's neigh followed by a bird's call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 174.wav
+Selected caption: Birdsong concludes with a mighty roar.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 175.wav
+Selected caption: A bird's call followed by a pig's oink.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 169_rev.wav
+Selected caption: A dog's bark before a bird's song.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 177_rev.wav
+Selected caption: A bird chirping after the bleat of a sheep.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 178_rev.wav
+Selected caption: A neighing horse followed by a bird's call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 179.wav
+Selected caption: The chirping concludes with a caw.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 180.wav
+Selected caption: Birdsong concludes with a bark.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 181.wav
+Selected caption: Crowing rooster followed by a bleating creature.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 182_rev.wav
+Selected caption: The sound of a door opening or closing succeeded by a man speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 183.wav
+Selected caption: A woman's dialogue before the door moves.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 184.wav
+Selected caption: A human speaking prior to the door's opening or closing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 185_rev.wav
+Selected caption: The sound of sniffing trailed by a man speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 186_rev.wav
+Selected caption: The snipping of scissors prior to a person speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 187.wav
+Selected caption: A man conversing followed by a series of knocks.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 188_trip.wav
+Selected caption: A dialogue unfolding amidst the sound of crumpling paper.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 189_trip.wav
+Selected caption: An individual speaking amidst the sound of chopping.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 190.wav
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  48%|████▊     | 194/400 [00:03<00:03, 64.39it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  50%|█████     | 201/400 [00:03<00:03, 62.97it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  52%|█████▏    | 208/400 [00:03<00:03, 61.66it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  54%|█████▍    | 215/400 [00:04<00:03, 60.29it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Selected caption: A woman's chatter followed by the pouring of a liquid.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 185_rev.wav
+Selected caption: The sound of liquid pouring precedes a person speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 192_trip.wav
+Selected caption: Human chatter amidst the clinking of glass.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 193_rev.wav
+Selected caption: The sound of footsteps prior to a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 194_rev.wav
+Selected caption: The sound of footsteps preceding a man speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 195_trip.wav
+Selected caption: A man speaking as footsteps are heard.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 196_trip.wav
+Selected caption: A person speaking intertwined with the rhythmic beat of footsteps.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 197_rev.wav
+Selected caption: The whirring of a blender succeeded by a woman's conversation.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 198.wav
+Selected caption: A woman's conversation preceding the blender's buzzing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 199_trip.wav
+Selected caption: A blender whirring amidst a conversation.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 200_trip.wav
+Selected caption: A man's speech intertwined with the hum of a blender.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 201_rev.wav
+Selected caption: A blender humming just before someone speaks.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 202_rev.wav
+Selected caption: The humming of a blender followed by a woman's voice.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 203_rev.wav
+Selected caption: The hum of a blender motor prior to an individual speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 204.wav
+Selected caption: A person speaking prior to the whirring of a blender.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 205.wav
+Selected caption: A discourse by a man followed by the sound of an object being rubbed.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 206_rev.wav
+Selected caption: Clinking cutlery followed by a lady engaging in conversation.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 207_rev.wav
+Selected caption: The mechanical sound of a drawer opening and closing followed by a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 208_rev.wav
+Selected caption: The whooshing of a hair dryer, then a man commences speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 209_rev.wav
+Selected caption: Cards shuffling trailed by voices speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 210_rev.wav
+Selected caption: The rustling of cards followed by a speaking man.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 211.wav
+Selected caption: A voice speaking followed by the scrubbing of a toothbrush.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 212_rev.wav
+Selected caption: The hum of an electric toothbrush followed by a man speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 213_rev.wav
+Selected caption: The audible busy signal precedes a person speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 214.wav
+Selected caption: Chirping concludes, giving way to music
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 215_rev.wav
+Selected caption: The melodies of an instrument followed by a buzzing housefly.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 216_rev.wav
+Selected caption: 'Musical instrumentation concluding with a cricket's chirp.'
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 217.wav
+Selected caption: A buzzing mosquito before the melody of music begins.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 218.wav
+Selected caption: A chirp concluding with a blaring siren
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 219.wav
+Selected caption: An owl hooting succeeded by harmonious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 220_rev.wav
+Selected caption: Cricket chirping, fading into a musical ending.
+Selected correct answer: 1
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  56%|█████▌    | 222/400 [00:04<00:02, 59.45it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  57%|█████▋    | 228/400 [00:04<00:02, 57.89it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  58%|█████▊    | 234/400 [00:04<00:02, 57.25it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  60%|██████    | 240/400 [00:04<00:02, 56.99it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  62%|██████▏   | 246/400 [00:04<00:02, 56.42it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 221_rev.wav
+Selected caption: A furious beast growling followed by thunder cracking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 222_rev.wav
+Selected caption: Melodic tunes followed by an alert signal.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 223_rev.wav
+Selected caption: A musical tune preceded by an alert sound.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 224_rev.wav
+Selected caption: Melodious music followed by the sound of a ringing telephone.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 225.wav
+Selected caption: Tap water flowing followed by the clinking of cutlery being placed on racks.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 226.wav
+Selected caption: The sound of water flowing from a tap followed by mechanistic operations.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 227_rev.wav
+Selected caption: The clinking of cooking utensils, succeeded by water flowing from a tap.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 228.wav
+Selected caption: The serene flow of water followed by thunderous footsteps.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 229.wav
+Selected caption: The sound of water splashing followed by the collision of two objects.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 230_rev.wav
+Selected caption: A conversing man followed by a chirping bird.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 9_rev.wav
+Selected caption: A man conversing followed by birds chirping and tweeting.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 232.wav
+Selected caption: The chirping of crickets concluding with a man's discourse.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 233.wav
+Selected caption: Birdsong followed by a man's discourse
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 234.wav
+Selected caption: A quack resonating, followed by a male voice
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 235_rev.wav
+Selected caption: A man speaking prior to a rooster crowing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 236.wav
+Selected caption: A chirping bird preceding a human's speech.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 237_rev.wav
+Selected caption: A man conversing concluding with a bird call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 238_rev.wav
+Selected caption: A man conversing, followed by a rooster's crowing
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 239_rev.wav
+Selected caption: A woman's dialogue culminates, making way for a bird call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 240.wav
+Selected caption: A chirp concludes with a man's shout
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 241.wav
+Selected caption: A chirping bird followed by a woman's conversation.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 242.wav
+Selected caption: A chirping bird prior to a male's voice.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 243.wav
+Selected caption: A bird flapping its wings and chirping followed by a man's voice.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 244_rev.wav
+Selected caption: A man's speech ceases, giving way to a bird's tweet.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 245_rev.wav
+Selected caption: A speaking male terminated by a chirping bird.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 246.wav
+Selected caption: A chirp echoed by successive clicking.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 247_rev.wav
+Selected caption: Beeping and bleeping conclude with chirping and tweeting.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 248_rev.wav
+Selected caption: A camera's click succeeded by a warbling bird call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 249_rev.wav
+Selected caption: The sound of telephone dialing preceded by a chirp.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 250_rev.wav
+Selected caption: A female whispering followed by gusts of wind
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 251.wav
+Selected caption: A woman's conversation followed by a wailing siren.
+Selected correct answer: 0
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  63%|██████▎   | 252/400 [00:04<00:02, 55.81it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  64%|██████▍   | 258/400 [00:05<00:03, 41.14it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  66%|██████▌   | 263/400 [00:05<00:03, 42.31it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  67%|██████▋   | 268/400 [00:05<00:03, 42.88it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  68%|██████▊   | 273/400 [00:05<00:02, 44.61it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  70%|██████▉   | 278/400 [00:05<00:02, 45.97it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 252_rev.wav
+Selected caption: An alarm sounding, followed by a man communicating
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 253.wav
+Selected caption: A child speaking followed by melodic tunes.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 254_rev.wav
+Selected caption: A steam whistle followed by a man speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 255.wav
+Selected caption: A man speaking before the wailing of an ambulance siren.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 256_rev.wav
+Selected caption: A blow of a steam whistle followed by people's chatter
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 257.wav
+Selected caption: A man's speech culminating in a fire alarm.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 258_rev.wav
+Selected caption: An alarming siren of smoke detector followed by a man's dialogue.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 259_trip.wav
+Selected caption: A man speaking intertwined with the ringing of an alarm clock.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 260_rev.wav
+Selected caption: The hum of a tuning fork concluding with a conversation by a man
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 261_trip.wav
+Selected caption: A man conversing amid the chirp of an alarm.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 262.wav
+Selected caption: A man conversing before a siren ringing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 263.wav
+Selected caption: A conversation from a man concluding with a beeping alarm.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 264.wav
+Selected caption: A chatting woman followed by a shrieking vehicle siren.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 265_rev.wav
+Selected caption: A buzzing car siren followed by a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 266_trip.wav
+Selected caption: The sound of a woman speaking amidst a ringing alarm
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 267.wav
+Selected caption: A man's speech culminating in a ringing alarm.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 268.wav
+Selected caption: Melodies playing followed by a river's gentle flow.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 269.wav
+Selected caption: A caterwaul echoed followed by a beeping device.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 270_rev.wav
+Selected caption: A clicking switch followed by a neighing horse.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 271.wav
+Selected caption: A bird's tweet concluding with the sound of a chainsaw.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 272.wav
+Selected caption: A bird's chirp preceding the noise of a chainsaw.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 273.wav
+Selected caption: Birdsong followed by the sound of a doorbell.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 274_rev.wav
+Selected caption: A pleasant chime ends with a chirping bird.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 275.wav
+Selected caption: A blaring truck horn followed by a man's dialogue.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 276_rev.wav
+Selected caption: A person talking concluding with a beeping car alarm.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 277.wav
+Selected caption: A whistle from the train followed by a man narrating.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 278.wav
+Selected caption: A humming engine concluding with a man speaking
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 279_rev.wav
+Selected caption: A man conversing followed by a revving engine.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 280_rev.wav
+Selected caption: A man's dialogue followed by a blaring police siren
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 281_trip.wav
+Selected caption: Man speaks and someone sneezes.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 282.wav
+Selected caption: A man speaks and then clears his throat.
+Selected correct answer: 0
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  71%|███████   | 283/400 [00:05<00:02, 45.13it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  72%|███████▏  | 288/400 [00:05<00:02, 45.96it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  73%|███████▎  | 293/400 [00:05<00:02, 46.24it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  74%|███████▍  | 298/400 [00:05<00:02, 46.73it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  76%|███████▌  | 303/400 [00:05<00:02, 46.79it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  77%|███████▋  | 308/400 [00:06<00:01, 46.36it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 283_trip.wav
+Selected caption: A person speaking amidst the sound of a crying baby.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 284_trip.wav
+Selected caption: A woman speaking amidst a round of rousing applause.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 281.wav
+Selected caption: A man's speech concluding with a sneeze.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 286.wav
+Selected caption: A conversing man followed by a sudden fart.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 287_trip.wav
+Selected caption: Conversations with the sound of hissing in the background.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 288_rev.wav
+Selected caption:  People melodiously humming and the singing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 289_trip.wav
+Selected caption: A person talking amidst gentle humming.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 290_trip.wav
+Selected caption: Conversation mingled with applause.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 291.wav
+Selected caption: Screaming animal ends in music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 292_rev.wav
+Selected caption: Rhythmic music followed by the screeching of a monkey.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 293.wav
+Selected caption: A neighing horse followed by melodious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 294.wav
+Selected caption: A panting dog followed by melodic tunes.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 295.wav
+Selected caption: Croaking frog and melodic music taking turns.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 296.wav
+Selected caption: Melodious music preceded by a meowing cat.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 297.wav
+Selected caption: A croaking frog transitioned by melodious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 298.wav
+Selected caption: Roaring followed by melodious tunes.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 299_rev.wav
+Selected caption: Melodious tunes followed by a bleating goat.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 300_trip.wav
+Selected caption: Crows cawing interspersed with the melody playing
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 301.wav
+Selected caption: A neighing horse prior to the melody playing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 302.wav
+Selected caption: A rumbling whale followed by melodic tunes.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 303_rev.wav
+Selected caption: Harmonious music playing, succeeded by a howling dog.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 304_rev.wav
+Selected caption: Rhythmic music, followed by a roaring animal.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 305.wav
+Selected caption: Subtle disturbances followed by piercing horn blasts.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 306_rev.wav
+Selected caption: Loud shouting trailed by the roaring of a vehicle engine
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 307_rev.wav
+Selected caption: The blaring train horn ending with a ringing bell.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 308_rev.wav
+Selected caption: The noise of a car engine concluding with the sound of vehicle surface impacts.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 309_rev.wav
+Selected caption: A car zooming past, then followed by the sounds of a car revving and accelerating
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 308_rev.wav
+Selected caption: The sound of an engine followed by background noise.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 308_rev.wav
+Selected caption: The hum of engine mechanics followed by some background noise.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 312.wav
+Selected caption: Accelerating and revving sounds culminating in the sound of a car horn.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 313.wav
+Selected caption: A man speaking prior to the sound of buttons clicking
+Selected correct answer: 0
+Evaluating:  78%|███████▊  | 313/400 [00:06<00:01, 46.45it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  80%|███████▉  | 318/400 [00:06<00:01, 45.67it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  81%|████████  | 323/400 [00:06<00:01, 45.09it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  82%|████████▏ | 328/400 [00:06<00:01, 44.90it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  83%|████████▎ | 333/400 [00:06<00:01, 44.39it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  84%|████████▍ | 338/400 [00:06<00:01, 44.34it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  86%|████████▌ | 343/400 [00:06<00:01, 44.23it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 314.wav
+Selected caption: Man detailing about a saw followed by loud whirring
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 315.wav
+Selected caption: A man's song followed by radio fuzz
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 53_rev.wav
+Selected caption: Melodious voices singing, succeeded by machine static noise.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 317.wav
+Selected caption: Chatter of people concludes with the shutter of a camera lens
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 318.wav
+Selected caption: A man explaining followed by an alarm beeping
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 319.wav
+Selected caption: Harmonious people singing, subsequently followed by static noise
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 320.wav
+Selected caption: A man conversing succeeded by a beeping watch
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 321_rev.wav
+Selected caption: A camera shuttering followed by a man speaking
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 322.wav
+Selected caption: A man speaking followed by keypad bleeps.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 323.wav
+Selected caption: A man's speech ending with a steam train's whistle
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 324_rev.wav
+Selected caption: Electronic interference concluded by a man narrating.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 325.wav
+Selected caption: A man's speech concludes with the sound of typewriter keystrokes.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 326.wav
+Selected caption: A man speaking, followed by a clicking sound.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 327_rev.wav
+Selected caption: The ding of a typewriter followed by a person conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 328_rev.wav
+Selected caption: A tone culminates with a man's narration.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 329.wav
+Selected caption: A person speaking followed by the cranking of a ratchet.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 330_rev.wav
+Selected caption: The sound of a keyboard typing concludes with an individual explaining.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 331.wav
+Selected caption: A voice speaking prior to the crack of a whip.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 257.wav
+Selected caption: A man conversing just before the fire alarm begins buzzing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 333_rev.wav
+Selected caption: The mechanical fan's activation occurring just prior to a man speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 334.wav
+Selected caption: A conversation precedes the buzzing of an electric shaver.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 335_rev.wav
+Selected caption: A cash register operating prior to an individual speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 336.wav
+Selected caption: A man speaking prior to the usage of a cash register.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 337.wav
+Selected caption: A chirping bird call followed by the echo of walking footsteps.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 338.wav
+Selected caption: The chirping of a bird concludes with a surface contact.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 339.wav
+Selected caption: Birdsong preceding footsteps on a walk.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 340_rev.wav
+Selected caption: The sound of footsteps concludes with the call of a bird.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 341.wav
+Selected caption: A clucking sound succeeded by the touch to the surface.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 342_rev.wav
+Selected caption: Walking footsteps followed by a bird's call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 343_rev.wav
+Selected caption: An alarming clock succeeded by a chirp.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 344.wav
+Selected caption: A bird call followed by a cap gun.
+Selected correct answer: 0
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  87%|████████▋ | 348/400 [00:06<00:01, 43.85it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  88%|████████▊ | 353/400 [00:07<00:01, 43.69it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  90%|████████▉ | 358/400 [00:07<00:00, 43.33it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  91%|█████████ | 363/400 [00:07<00:00, 42.03it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  92%|█████████▏| 368/400 [00:07<00:00, 41.77it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  93%|█████████▎| 373/400 [00:07<00:00, 41.28it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 345_rev.wav
+Selected caption: The echo of weapon fire swiftly overtaken by a chirp.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 346_rev.wav
+Selected caption: A gunshot preceding a chirp
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 344_rev.wav
+Selected caption: A gunshot preceding a bird's call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 348_rev.wav
+Selected caption: A tapping sound concluded by a bird's call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 349.wav
+Selected caption: A bird call succeeded by the tapping sound.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 350_rev.wav
+Selected caption: The sound of a tap followed by a bird call
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 351_rev.wav
+Selected caption: A tap concludes with bird vocalization
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 352_rev.wav
+Selected caption: Snapping fingers succeeded by a huffing dog.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 296_trip.wav
+Selected caption: A screeching animal followed by audible flatulence.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 354_rev.wav
+Selected caption: A person's breath followed by a caterwauling cat.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 355.wav
+Selected caption: An animal's scream concluded by a chatter of speech.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 356.wav
+Selected caption: A squealing dog followed by human chatter.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 357_rev.wav
+Selected caption: A slap or smack concludes with a bird's tweet.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 358.wav
+Selected caption: Birds chirping and tweeting, followed by the clip-clop of hooves
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 359_rev.wav
+Selected caption: A slam sound concluding with a bird call.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 360_rev.wav
+Selected caption: Audible breathing succeeded by an engine revving.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 361_rev.wav
+Selected caption: Crowd erupting in cheer followed by engine roaring
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 362.wav
+Selected caption: An engine revving succeeded by people engaged in conversation
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 363.wav
+Selected caption: An engine revving prior to people conversing
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 364.wav
+Selected caption: An engine revving, succeeded by people chatting
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 365_rev.wav
+Selected caption: People talking succeeded by a booming explosion.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 366.wav
+Selected caption: The cascading sound of water pouring into a jug, followed by a profound sigh.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 367_rev.wav
+Selected caption: The laughter of people followed by a water splashing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 368_rev.wav
+Selected caption: Human verbalization followed by the sound of a jar being filled.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 369.wav
+Selected caption: A person talking followed by the roar of a chainsaw.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 370.wav
+Selected caption: A person speaking, followed by intense drilling noises.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 371_rev.wav
+Selected caption: Someone converses following the commencement of hammering.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 372_rev.wav
+Selected caption: Distinct hammering, then followed by a voice speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 373_rev.wav
+Selected caption: Intense drilling sounds prior to a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 374_rev.wav
+Selected caption: The buzz of a power tool followed by a man speaking.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 375_rev.wav
+Selected caption: A man's speech preceding the buzz of a power tool.
+Selected correct answer: 1
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  94%|█████████▍| 378/400 [00:07<00:00, 41.08it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  96%|█████████▌| 383/400 [00:07<00:00, 40.69it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  97%|█████████▋| 388/400 [00:07<00:00, 40.35it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  98%|█████████▊| 393/400 [00:08<00:00, 39.88it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating:  99%|█████████▉| 397/400 [00:08<00:00, 39.45it/s]It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to `WhisperFeatureExtractor()`. Failing to do so can result in silent errors that might be hard to debug.
+Evaluating: 100%|██████████| 400/400 [00:08<00:00, 48.34it/s]
+/home/gs285/miniconda3/envs/llava/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gs285/miniconda3/envs/llava/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 376.wav
+Selected caption: A man speaking, succeeded by the rasp of sawing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 377_rev.wav
+Selected caption: The whirring of a power tool before a man converses.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 378.wav
+Selected caption: A man speaking, followed by the a power tool.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 379.wav
+Selected caption: A man conversing prior to intense drilling.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 380_rev.wav
+Selected caption: A vehicle zooming past followed by droplets of water trickling down.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 381_rev.wav
+Selected caption: The ringing of a telephone followed by a woman's conversation.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 382_rev.wav
+Selected caption: The ringing of a mobile followed by a man's speech.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 383_trip.wav
+Selected caption: A man's conversation accompanied by a resonant telephone ring.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 384_rev.wav
+Selected caption: A ringing telephone concludes with a conversation.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 385.wav
+Selected caption: A man's dialogue followed by a ringing telephone.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 386.wav
+Selected caption: A ringing telephone prior to a man conversing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 387_rev.wav
+Selected caption: A telephone ringing merged with a person conversing sequentially.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 388.wav
+Selected caption: A conversation accompanied by successive telephone rings.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 389_rev.wav
+Selected caption: The ringing of a telephone, followed by a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 390_rev.wav
+Selected caption: A ringing telephone proceeded by a man's voice.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 391_trip.wav
+Selected caption: A conversation interleaved with a telephone chime.
+Selected correct answer: 2
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 392.wav
+Selected caption: A man's speech leading into a telephone ring.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 393_rev.wav
+Selected caption: A telephone ringing prior to a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 394.wav
+Selected caption: A man conversing, followed by a telephone ringing.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 395_rev.wav
+Selected caption: A telephone ringing prior to a man conversing.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 396_rev.wav
+Selected caption: The ringing of a mobile followed by a man engaging in a conversation.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 397.wav
+Selected caption: Thunderstorm and rain followed by melodious sound effects.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 398_rev.wav
+Selected caption: A majestic whale's call followed by melodious music.
+Selected correct answer: 1
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 399.wav
+Selected caption: Thunderous claps and raindrops followed by harmonious music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+Selected audio file: 400.wav
+Selected caption: The sound of rainfall followed by melodic music.
+Selected correct answer: 0
+Error in multiple choice evaluation: Qwen2AudioForConditionalGeneration.forward() got an unexpected keyword argument 'cache_position'
+
+=== Direct Multiple Choice Evaluation Results ===
+Overall Accuracy: 0.0000
+Average Confidence: nan
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+Correct Predictions: 0/400
+Saving results to /home/gs285/MLLM-defense-using-random-smoothing/audio_eval/audio_caption_normal_results.json...
+Evaluation completed!

@@ -2,3 +2,6 @@
 *.jpg
 *.pyc
 nohup.out
+*.wav
+*.json
+*.csv
