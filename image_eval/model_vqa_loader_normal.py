@@ -37,6 +37,7 @@ def main():
             args.hf_model_name,
             torch_dtype=torch.float16,
             low_cpu_mem_usage=True,
+            use_safetensors=True
         ).to(device)
         processor = LlavaProcessor.from_pretrained(args.hf_model_name)
     elif "qwen" in args.hf_model_name.lower():
@@ -94,13 +95,14 @@ def main():
                 },
             ]
             prompt = processor.apply_chat_template(conversation, add_generation_prompt=True)
-            image_tensor = processor.image_processor(images=image, return_tensors='pt')['pixel_values']
-            image_tensor = image_tensor.clamp(0.0, 1.0)
+
 
         all_user_messages = []
         with torch.no_grad():
             if "blip2" in args.hf_model_name.lower():
                 inputs = processor(image, question, return_tensors='pt')
+            elif "llava" in args.hf_model_name.lower():
+                inputs = processor(images=image, text=[prompt], return_tensors='pt').to(device, torch.float16)
             else:
                 inputs = processor(images=image_tensor, text=[prompt], return_tensors='pt').to(device, torch.float16)
             input_ids = inputs['input_ids']

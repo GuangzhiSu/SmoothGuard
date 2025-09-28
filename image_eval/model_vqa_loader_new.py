@@ -19,6 +19,25 @@ def load_image(image_path):
     image = Image.open(image_path).convert('RGB')
     return image
 
+def tensor_to_pil(tensor):
+    """
+    Convert a torch tensor [C,H,W] or [H,W,C] in [0,1] or float range
+    to a PIL.Image in RGB.
+    """
+    if tensor.dim() == 3 and tensor.shape[0] in [1,3]:  
+        # [C,H,W] → [H,W,C]
+        tensor = tensor.permute(1, 2, 0)
+    elif tensor.dim() == 3 and tensor.shape[-1] in [1,3]:
+        # already [H,W,C]
+        pass
+    else:
+        raise ValueError(f"Unexpected tensor shape: {tensor.shape}")
+
+    array = tensor.detach().cpu().numpy()
+    array = np.clip(array, 0, 1)   # if range is [0,1]
+    array = (array * 255).astype(np.uint8)
+    return Image.fromarray(array)
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--hf-model-name', type=str, default='liuhaotian/llava-v1.5-7b', help='HuggingFace model name')
@@ -39,6 +58,7 @@ def main():
             args.hf_model_name,
             torch_dtype=torch.float16,
             low_cpu_mem_usage=True,
+            use_safetensors=True
         ).to(device)
         # vision_proc = CLIPImageProcessor.from_pretrained("openai/clip-vit-base-patch32")
         # tokenizer = LlamaTokenizer.from_pretrained(args.hf_model_name, use_fast=False)
@@ -103,7 +123,7 @@ def main():
             # For random smoothing, we need to work with the pixel_values from base_inputs
             image_tensor = base_inputs['pixel_values']
     
-        else:
+        elif "llava" in args.hf_model_name.lower():
             conversation = [
                 {
                     "role": "user",
@@ -118,6 +138,7 @@ def main():
 
         # Add noise
         noisy_images = _apply_random_smoothing(image_tensor, sigma=args.sigma, num_copy=args.num_copy)
+        noisy_images = [tensor_to_pil(noisy_img) for noisy_img in noisy_images]
 
         # # Save noisy images for the first five questions
         # if q_idx < 20:
@@ -140,6 +161,8 @@ def main():
                     # For Qwen, use base_inputs and replace pixel_values with noisy tensor
                     inputs = dict(base_inputs)
                     inputs['pixel_values'] = noisy_img.to(device, torch.float16)
+                elif "llava" in args.hf_model_name.lower():
+                    inputs = processor(images=noisy_img, text=prompt, return_tensors='pt').to(device, torch.float16)
                 else:
                     inputs = processor(images=noisy_img, text=[prompt], return_tensors='pt').to(device, torch.float16)
                 input_ids = inputs['input_ids']
