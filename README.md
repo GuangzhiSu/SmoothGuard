@@ -35,27 +35,7 @@ cd SmoothGuard
 pip install -r requirements.txt
 ```
 
-## Project Structure
 
-```
-SmoothGuard/
-├── model-safetybench-photo.py           # Defense evaluation with SmoothGuard
-├── model-safety-bench-normal-photo.py   # Baseline evaluation without defense
-├── evaluation.py                         # ASR metric computation
-├── utils.py                              # Utility functions (smoothing, clustering)
-├── requirements.txt                      # Python dependencies
-├── run_all_photo.sh                      # Batch script for sigma sweep experiments
-├── run_formol_photo.sh                   # Batch script for baseline evaluation
-├── MM-SafetyBench/                       # Dataset directory
-│   ├── processed_questions/              # Safety benchmark questions
-│   └── imgs/                             # Associated images
-├── eval/                                 # Additional evaluation benchmarks
-│   ├── pope/                             # POPE benchmark and scripts
-│   └── bench-in-the-wild/               # Bench-in-the-wild benchmark and scripts
-├── .gitignore
-├── README.md
-└── LICENSE
-```
 
 ## Usage
 
@@ -67,6 +47,9 @@ SmoothGuard/
 
 2. Prepare the adversarial image (e.g., universal adversarial perturbation(https://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models)):
    - Example: `prompt_constrained_32.bmp`
+
+
+
 
 
 ## Evaluation
