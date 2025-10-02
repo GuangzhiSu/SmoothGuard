@@ -4,6 +4,10 @@ Repository for the Paper "SmoothGuard: Defending Multimodal Large Language Model
 
 A robust defense mechanism for Multimodal Large Language Models (MLLMs) using randomized smoothing. This repository enables robust answer selection for Visual Question Answering (VQA) by adding noise to input images, generating multiple outputs, and clustering results to select the most representative answer. Supports models like Qwen, BLIP-2, and others via HuggingFace Transformers.
 
+<p align="center">
+  <img src="Assets/images/framework.png" alt="SmoothGuard Overview" width="800">
+</p>
+
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
