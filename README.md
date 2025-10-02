@@ -65,7 +65,7 @@ SmoothGuard/
    - Place question files in `MM-SafetyBench/processed_questions/`
    - Place images in `MM-SafetyBench/imgs/`
 
-2. Prepare the adversarial image (e.g., universal adversarial perturbationhttps://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models):
+2. Prepare the adversarial image (e.g., universal adversarial perturbation(https://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models)):
    - Example: `prompt_constrained_32.bmp`
 
 ### Quick Start
