@@ -68,35 +68,6 @@ SmoothGuard/
 2. Prepare the adversarial image (e.g., universal adversarial perturbation(https://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models)):
    - Example: `prompt_constrained_32.bmp`
 
-### Quick Start
-
-#### Run Baseline (No Defense)
-
-```bash
-python model-safety-bench-normal-photo.py \
-    --hf-model-name <model_path> \
-    --question-dir MM-SafetyBench/processed_questions \
-    --image-dir MM-SafetyBench/imgs \
-    --output-dir results_baseline \
-    --universal-image <path_to_adversarial_image.bmp> \
-    --device cuda
-```
-
-#### Run with SmoothGuard Defense
-
-```bash
-python model-safetybench-photo.py \
-    --hf-model-name <model_path> \
-    --question-dir MM-SafetyBench/processed_questions \
-    --image-dir MM-SafetyBench/imgs \
-    --output-dir results_defended \
-    --universal-image <path_to_adversarial_image.bmp> \
-    --sigma 0.10 \
-    --num-copy 10 \
-    --device cuda \
-    --scenario 01-Illegal_Activity
-```
-
 
 ## Evaluation
 
