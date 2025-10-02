@@ -18,7 +18,7 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
 ## Features
 
 - **Randomized Smoothing**: Adds noise to images for robust inference.
-- **Model Support**: Works with Qwen, BLIP-2, and other HuggingFace models.
+- **Model Support**: Works with Qwen, Llava, and other HuggingFace models.
 - **Clustering-based Answer Selection**: Selects robust answers from multiple noisy outputs.
 - **Flexible Evaluation**: Tools for VQA evaluation and noisy image inspection.
 
