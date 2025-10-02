@@ -11,10 +11,8 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
-- [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Evaluation](#evaluation)
-- [Notes](#notes)
 - [Citation](#citation)
 - [License](#license)
 - [Contact / Contributing](#contact--contributing)
