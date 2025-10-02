@@ -130,7 +130,7 @@ If you use this codebase, please cite:
 ```bibtex
 @inproceedings{su2025smoothguard,
   title={SmoothGuard: Defending Multimodal Large Language Models with Noise Perturbation and Clustering Aggregation},
-  author={Su, Guangzhi and [Other Authors]},
+  author={Guangzhi Su, Shuchang Huang, Yutong Ke, Zhuohang Liu, Long Qian, and Kaizhu Huang},
   booktitle={ICDM 2025 Workshop},
   year={2025}
 }
@@ -145,5 +145,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions or contributions, please:
 - Open an issue on GitHub
 - Submit a pull request
-- Contact: [Your contact information]
+- Contact: ["Shuchang Huang" <shuchang.huang@duke.edu>]
 
