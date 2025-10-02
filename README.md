@@ -1,11 +1,10 @@
-# MLLM Defense Using Random Smoothing
+# SmoothGuard
+
+Repository for the Paper "SmoothGuard: Defending Multimodal Large Language Models with Noise Perturbation and Clustering Aggregation" (ICDM 2025 Workshop)
 
 A robust defense mechanism for Multimodal Large Language Models (MLLMs) using randomized smoothing. This repository enables robust answer selection for Visual Question Answering (VQA) by adding noise to input images, generating multiple outputs, and clustering results to select the most representative answer. Supports models like Qwen, BLIP-2, and others via HuggingFace Transformers.
 
----
-
 ## Table of Contents
-
 - [Features](#features)
 - [Installation](#installation)
 - [Project Structure](#project-structure)
@@ -16,8 +15,6 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
 - [License](#license)
 - [Contact / Contributing](#contact--contributing)
 
----
-
 ## Features
 
 - **Randomized Smoothing**: Adds noise to images for robust inference.
@@ -25,131 +22,172 @@ A robust defense mechanism for Multimodal Large Language Models (MLLMs) using ra
 - **Clustering-based Answer Selection**: Selects robust answers from multiple noisy outputs.
 - **Flexible Evaluation**: Tools for VQA evaluation and noisy image inspection.
 
----
-
 ## Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone <repo-url>
-   cd MLLM-defense-using-random-smoothing
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/GuangzhiSu/SmoothGuard.git
+cd SmoothGuard
+```
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
----
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ## Project Structure
 
 ```
-MLLM-defense-using-random-smoothing/
-├── experiment.py                  # Sigma sweep experiments
-├── experiments.sh                 # Example batch script for experiments
-├── inference.py                   # Inference with random smoothing
-├── models.txt                     # List of supported models
-├── utils.py                       # Utility functions
-├── requirements.txt               # Python dependencies
-├── eval/
-│   ├── model_vqa_loader_new.py    # VQA evaluation with smoothing
-│   ├── model_vqa_loader_normal.py # VQA evaluation (baseline)
-│   ├── pope/                      # POPE benchmark and scripts
-│   └── bench-in-the-wild/         # Bench-in-the-wild benchmark and scripts
-├── llava_provided/
-│   ├── scripts/                   # LLaVA-related scripts (finetuning, conversion, etc.)
-│   └── data/                      # Example datasets for various benchmarks
+SmoothGuard/
+├── model-safetybench-photo.py           # Defense evaluation with SmoothGuard
+├── model-safety-bench-normal-photo.py   # Baseline evaluation without defense
+├── evaluation.py                         # ASR metric computation
+├── utils.py                              # Utility functions (smoothing, clustering)
+├── requirements.txt                      # Python dependencies
+├── run_all_photo.sh                      # Batch script for sigma sweep experiments
+├── run_formol_photo.sh                   # Batch script for baseline evaluation
+├── MM-SafetyBench/                       # Dataset directory
+│   ├── processed_questions/              # Safety benchmark questions
+│   └── imgs/                             # Associated images
+├── eval/                                 # Additional evaluation benchmarks
+│   ├── pope/                             # POPE benchmark and scripts
+│   └── bench-in-the-wild/               # Bench-in-the-wild benchmark and scripts
 ├── .gitignore
 ├── README.md
-└── ...
+└── LICENSE
 ```
-
----
 
 ## Usage
 
-### 1. Prepare Data
+### Preparing the Dataset
 
-- Place your images and prompt files (e.g., `.jsonl`) in the appropriate data folders (see `llava_provided/data/` for examples).
+1. Download and prepare the MM-SafetyBench dataset(https://github.com/isXinLiu/MM-SafetyBench):
+   - Place question files in `MM-SafetyBench/processed_questions/`
+   - Place images in `MM-SafetyBench/imgs/`
 
-### 2. Run Inference
+2. Prepare the adversarial image (e.g., universal adversarial perturbationhttps://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models):
+   - Example: `prompt_constrained_32.bmp`
 
-- Run inference with a fixed noise level (sigma):
-  ```bash
-  python inference.py --hf-model-name <model> --image_file <img> --prompt-file <jsonl> --sigma <value> --num-samples <N>
-  ```
+### Quick Start
 
-### 3. Run Experiments
+#### Run Baseline (No Defense)
 
-- Sweep over sigma values to find the best noise level:
-  ```bash
-  python experiment.py --hf-model-name <model> --image_file <img> --prompt-file <jsonl> --sigma-list <list>
-  ```
-- Example batch run:
-  ```bash
-  bash experiments.sh
-  ```
+```bash
+python model-safety-bench-normal-photo.py \
+    --hf-model-name <model_path> \
+    --question-dir MM-SafetyBench/processed_questions \
+    --image-dir MM-SafetyBench/imgs \
+    --output-dir results_baseline \
+    --universal-image <path_to_adversarial_image.bmp> \
+    --device cuda
+```
 
-### 4. Evaluate on VQA Benchmarks
+#### Run with SmoothGuard Defense
 
-There are two evaluation modes for VQA benchmarks:
-- **Normal Inference**: Standard model inference without added noise.
-- **Inference with Noise (Randomized Smoothing)**: Model inference with noise added to the input images for robustness evaluation.
+```bash
+python model-safetybench-photo.py \
+    --hf-model-name <model_path> \
+    --question-dir MM-SafetyBench/processed_questions \
+    --image-dir MM-SafetyBench/imgs \
+    --output-dir results_defended \
+    --universal-image <path_to_adversarial_image.bmp> \
+    --sigma 0.10 \
+    --num-copy 10 \
+    --device cuda \
+    --scenario 01-Illegal_Activity
+```
 
-For both POPE and Bench-in-the-Wild benchmarks, you can run the provided bash scripts in each folder to perform the evaluation end-to-end:
-
-- **POPE Benchmark:**
-  - Run the evaluation (normal or with noise) by executing the bash script:
-    ```bash
-    bash eval/pope/model_pope_loader_normal.sh   # For normal inference
-    bash eval/pope/model_pope_loader_new.sh      # For inference with noise
-    ```
-
-- **Bench-in-the-Wild:**
-  - Run the evaluation (normal or with noise) by executing the bash script:
-    ```bash
-    bash eval/bench-in-the-wild/llavabench_normal.sh  # For normal inference
-    bash eval/bench-in-the-wild/llavabench_new.sh     # For inference with noise
-    ```
-
-The scripts will handle the full evaluation pipeline, including running the model and saving outputs. Example answer and review files can be found in the corresponding `answers/` and `reviews/` subfolders.
-
----
 
 ## Evaluation
 
-- **Robustness**: Evaluates model robustness by clustering outputs from multiple noisy samples and selecting the most representative answer.
-- **Metrics**: Outputs are in `.jsonl` format for easy analysis. Noisy images are saved for qualitative inspection.
-- **Benchmarks**: Includes scripts and data for POPE and Bench-in-the-Wild evaluations.
+### Adversarial Robustness Evaluation (ASR Testing)
 
----
+We evaluate the defense effectiveness against jailbreak attacks using the **MM-SafetyBench** dataset. The evaluation consists of two modes:
 
-## Notes
+#### 1. Baseline Evaluation (No Defense)
 
-- All model loading and inference is done via HuggingFace Transformers.
-- For Qwen-VL, ensure `qwen_vl_utils.py` is available in your PYTHONPATH or install from the appropriate source.
-- For LLaVA, install the official or custom LLaVA package as needed (not on PyPI as of writing).
-- For detailed script arguments, run any script with `--help`.
+Test the model's vulnerability to adversarial images without any defense mechanism:
 
----
+```bash
+python model-safety-bench-normal-photo.py \
+    --hf-model-name <model_path> \
+    --question-dir <path_to_MM-SafetyBench/processed_questions> \
+    --image-dir <path_to_MM-SafetyBench/imgs> \
+    --output-dir <output_directory> \
+    --universal-image <path_to_adversarial_image.bmp> \
+    --device cuda \
+    --max-new-tokens 128 \
+    --variant SD
+```
+
+**Parameters:**
+- `--hf-model-name`: Path to the target multimodal model
+- `--question-dir`: Directory containing MM-SafetyBench question files (`.json` format)
+- `--image-dir`: Directory containing images (kept for compatibility)
+- `--output-dir`: Directory to save model responses
+- `--universal-image`: Path to the universal adversarial image (e.g., `prompt_constrained_32.bmp`)
+- `--variant`: Question variant type (`SD`, `SD_TYPO`, or `TYPO`)
+
+#### 2. Defense Evaluation (With SmoothGuard)
+
+Test the model with SmoothGuard defense mechanism enabled:
+
+```bash
+python model-safetybench-photo.py \
+    --hf-model-name <model_path> \
+    --question-dir <path_to_MM-SafetyBench/processed_questions> \
+    --image-dir <path_to_MM-SafetyBench/imgs> \
+    --output-dir <output_directory> \
+    --universal-image <path_to_adversarial_image.bmp> \
+    --sigma 0.10 \
+    --num-copy 10 \
+    --device cuda \
+    --max-new-tokens 128 \
+    --variant SD \
+    --scenario <scenario_name>
+```
+
+**Defense Parameters:**
+- `--sigma`: Noise perturbation level (recommended: 0.05-0.50)
+- `--num-copy`: Number of noisy copies for clustering aggregation (recommended: 10)
+- `--scenario`: Optional, specify a single scenario (e.g., `01-Illegal_Activity`)
+
+#### 3. Computing ASR Metrics
+
+After generating responses, evaluate the Attack Success Rate (ASR):
+
+```bash
+python evaluation.py \
+    --output-dir <questions_with_answers_directory> \
+    --eval-output-dir <evaluation_results_directory> \
+    --scenario-list <scenario_name>
+```
+
+This will compute the ASR for each scenario in MM-SafetyBench and save the results.
+
+
 
 ## Citation
 
 If you use this codebase, please cite:
 
+```bibtex
+@inproceedings{su2025smoothguard,
+  title={SmoothGuard: Defending Multimodal Large Language Models with Noise Perturbation and Clustering Aggregation},
+  author={Su, Guangzhi and [Other Authors]},
+  booktitle={ICDM 2025 Workshop},
+  year={2025}
+}
 ```
-[Add your citation here]
-```
-
----
 
 ## License
 
-[Specify your license here, e.g., MIT, Apache 2.0, etc.]
-
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact / Contributing
 
-For questions or contributions, please open an issue or pull request. 
+For questions or contributions, please:
+- Open an issue on GitHub
+- Submit a pull request
+- Contact: [Your contact information]
+
