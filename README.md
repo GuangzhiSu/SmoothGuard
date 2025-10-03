@@ -1,12 +1,22 @@
-# SmoothGuard
+# SmoothGuard: Defending Multimodal Large Language Models with Noise Perturbation and Clustering Aggregation
 
-Repository for the Paper "SmoothGuard: Defending Multimodal Large Language Models with Noise Perturbation and Clustering Aggregation" (ICDM 2025 Workshop)
+---
 
-A robust defense mechanism for Multimodal Large Language Models (MLLMs) using randomized smoothing. This repository enables robust answer selection for Visual Question Answering (VQA) by adding noise to input images, generating multiple outputs, and clustering results to select the most representative answer. Supports models like Qwen, BLIP-2, and others via HuggingFace Transformers.
+**Guangzhi Su<sup>1,★</sup>, Shuchang Huang<sup>2,★</sup>, Yutong Ke<sup>1</sup>  
+Zhuohang Liu<sup>1</sup>, Long Qian<sup>1</sup>, Kaizhu Huang<sup>1</sup>**
+
+<sup>★</sup>Equal Contribution  
+
+<sup>1</sup>Duke Kunshan University  <sup>2</sup>Independent Researcher
+
+**International Conference on Data Mining (ICDM) workshop, 2025**
+
 
 <p align="center">
   <img src="Assets/images/framework.png" alt="SmoothGuard Overview" width="800">
 </p>
+
+SmoothGuard is a lightweight, model-agnostic defense for multimodal large language models (MLLMs) that enhances robustness against adversarial attacks. It applies randomized smoothing with Gaussian noise and clustering-based aggregation to filter out adversarial responses while preserving utility. Tested on POPE, Bench-in-the-Wild, and MM-SafetyBench, SmoothGuard achieves strong resistance to attacks without retraining or modifying model architecture.
 
 ## Table of Contents
 - [Features](#features)
