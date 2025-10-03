@@ -1,3 +1,5 @@
+<div align="center">
+  
 # SmoothGuard: Defending Multimodal Large Language Models with Noise Perturbation and Clustering Aggregation
 
 ---
@@ -11,7 +13,7 @@ Zhuohang Liu<sup>1</sup>, Long Qian<sup>1</sup>, Kaizhu Huang<sup>1</sup>**
 
 **International Conference on Data Mining (ICDM) workshop, 2025**
 
-
+</div>
 <p align="center">
   <img src="Assets/images/framework.png" alt="SmoothGuard Overview" width="800">
 </p>
