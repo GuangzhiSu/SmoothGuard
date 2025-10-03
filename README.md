@@ -15,7 +15,7 @@ Zhuohang Liu<sup>1</sup>, Long Qian<sup>1</sup>, Kaizhu Huang<sup>1</sup>**
 
 </div>
 <p align="center">
-  <img src="Assets/images/framework.png" alt="SmoothGuard Overview" width="800">
+  <img src="Assets/images/framework with white background.png" alt="SmoothGuard Overview" width="800">
 </p>
 
 SmoothGuard is a lightweight, model-agnostic defense for multimodal large language models (MLLMs) that enhances robustness against adversarial attacks. It applies randomized smoothing with Gaussian noise and clustering-based aggregation to filter out adversarial responses while preserving utility. Tested on POPE, Bench-in-the-Wild, and MM-SafetyBench, SmoothGuard achieves strong resistance to attacks without retraining or modifying model architecture.
