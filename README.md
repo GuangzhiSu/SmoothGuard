@@ -157,5 +157,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions or contributions, please:
 - Open an issue on GitHub
 - Submit a pull request
-- Contact: ["Shuchang Huang" <shuchang.huang@duke.edu>]
+- Contact: ["Guangzhi Su" <guangzhi.su@dukekunshan.edu.cn>]
 
