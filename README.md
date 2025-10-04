@@ -31,7 +31,7 @@ SmoothGuard is a lightweight, model-agnostic defense for multimodal large langua
 
 ## Features
 
-- **Randomized Smoothing**: Adds noise to images for robust inference.
+- **Randomized Smoothing**: Adds noise to image and audio(to be updated) for robust inference.
 - **Model Support**: Works with Qwen, Llava, and other HuggingFace models.
 - **Clustering-based Answer Selection**: Selects robust answers from multiple noisy outputs.
 - **Flexible Evaluation**: Tools for VQA evaluation and noisy image inspection.
@@ -55,16 +55,29 @@ pip install -r requirements.txt
 
 ### Preparing the Dataset
 
-1. Download and prepare the MM-SafetyBench dataset(https://github.com/isXinLiu/MM-SafetyBench):
-   - Place question files in `MM-SafetyBench/processed_questions/`
-   - Place images in `MM-SafetyBench/imgs/`
+#### SafetyBench
 
-2. Prepare the adversarial image (e.g., universal adversarial perturbation(https://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models)):
-   - Example: `prompt_constrained_32.bmp`
+1. Download and prepare the **MM-SafetyBench** dataset from [MM-SafetyBench GitHub](https://github.com/isXinLiu/MM-SafetyBench).  
+   - Place question files in `image_eval/safetybench/processed_questions/`  
+   - Place image files in `image_eval/safetybench/imgs/`
 
+2. Prepare the adversarial image (e.g., universal adversarial perturbation) from [Visual-Adversarial-Examples-Jailbreak-Large-Language-Models](https://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models).  
+   - Example file: `prompt_constrained_32.bmp`
 
+#### Bench-in-the-Wild
 
+1. Download the **LLaVA-Bench-in-the-Wild** dataset from [Hugging Face](https://huggingface.co/datasets/liuhaotian/llava-bench-in-the-wild/tree/main).  
 
+2. Create a folder named `answers` inside `bench_in_the_wild/`, and move the following files into it:  
+   - `answers_gpt4.jsonl`  
+   - `bard_0718.jsonl`  
+   - `bing_chat_0629.jsonl`  
+   These files contain the standard answers produced by different LLMs.
+
+#### POPE
+
+1. Download the **COCO** dataset from [POPE GitHub](https://github.com/AoiDragon/POPE/tree/e3e39262c85a6a83f26cf5094022a782cb0df58d/output/coco).  
+2. Place the downloaded files under `image_eval/pope/coco/`
 
 ## Evaluation
 
@@ -132,6 +145,11 @@ python evaluation.py \
 ```
 
 This will compute the ASR for each scenario in MM-SafetyBench and save the results.
+
+### Utility Testing
+
+
+
 
 
 
