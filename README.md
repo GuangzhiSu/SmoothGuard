@@ -148,7 +148,144 @@ This will compute the ASR for each scenario in MM-SafetyBench and save the resul
 
 ### Utility Testing
 
+We further evaluate the utility of the model—its ability to maintain normal performance on standard multimodal tasks—using the **Bench-in-the-Wild** and **POPE** benchmarks. Both evaluations are conducted under two modes:
 
+1. **Baseline (No Defense)** – Model runs normally without SmoothGuard.
+2. **Defense (With SmoothGuard)** – Model runs with noise-based defense applied.
+
+
+
+#### 1. Bench-in-the-Wild Evaluation
+
+**Step 1: Generate Model Answers**
+
+Run the following commands to generate answers for both modes. Replace the model path and file locations as needed.
+
+**Baseline (No Defense)**
+
+```bash
+python image_eval/model_vqa_loader_normal.py \
+    --hf-model-name <model_path> \
+    --image-folder <path_to_bench_in_the_wild/images> \
+    --question-file <path_to_bench_in_the_wild/questions.jsonl> \
+    --answers-file <output_path>/llava-Instruct-normal.jsonl \
+    --device cuda \
+    --max-new-tokens 256
+```
+
+**Defense (With SmoothGuard)**
+
+```bash
+python image_eval/model_vqa_loader_new.py \
+    --hf-model-name <model_path> \
+    --image-folder <path_to_bench_in_the_wild/images> \
+    --question-file <path_to_bench_in_the_wild/questions.jsonl> \
+    --answers-file <output_path>/llava-Instruct-new.jsonl \
+    --sigma 0.1 \
+    --num-copy 10 \
+    --device cuda \
+    --max-new-tokens 256
+```
+
+**Parameters:**
+
+* `--hf-model-name`: Path to the evaluated model.
+* `--image-folder`: Directory containing evaluation images.
+* `--question-file`: File with benchmark questions.
+* `--answers-file`: Path to save generated model responses.
+* `--sigma`: Noise perturbation level (applied only in defense mode).
+* `--num-copy`: Number of noisy copies aggregated for output (defense mode only).
+* `--max-new-tokens`: Maximum response length.
+
+
+
+**Step 2: Evaluate with LLM-based Review**
+
+After obtaining answers, evaluate the quality using LLM-based automatic grading:
+
+```bash
+python image_eval/bench-in-the-wild/eval_wildbench_qwen.py \
+    --question <path_to_bench_in_the_wild/questions.jsonl> \
+    --context <path_to_bench_in_the_wild/context.jsonl> \
+    --rule <path_to_bench_in_the_wild/rule.json> \
+    --answer-list \
+        <path_to_bench_in_the_wild/answers/answers_gpt4.jsonl> \
+        <path_to_bench_in_the_wild/answers/llava-Instruct-<mode>.jsonl> \
+    --output <path_to_bench_in_the_wild/reviews/llava-reviews-<mode>.jsonl>
+```
+
+**Where `<mode>`** is either `normal` or `new`.
+
+Then summarize the review results:
+
+```bash
+python image_eval/bench-in-the-wild/summarize_gpt_review.py \
+    -f <path_to_bench_in_the_wild/reviews/llava-reviews-<mode>.jsonl>
+```
+
+This produces aggregated utility metrics that quantify performance quality under both modes.
+
+
+
+#### 2. POPE Evaluation
+
+The **POPE** benchmark assesses object hallucination and general reasoning fidelity.
+
+**Step 1: Generate Model Answers**
+
+**Baseline (No Defense)**
+
+```bash
+python image_eval/model_vqa_loader_normal.py \
+    --hf-model-name <model_path> \
+    --image-folder <path_to_pope/val2014> \
+    --question-file <path_to_pope/llava_pope_test.jsonl> \
+    --answers-file <output_path>/llava-Instruct-normal.jsonl \
+    --device cuda \
+    --max-new-tokens 256
+```
+
+**Defense (With SmoothGuard)**
+
+```bash
+python image_eval/model_vqa_loader_new.py \
+    --hf-model-name <model_path> \
+    --image-folder <path_to_pope/val2014> \
+    --question-file <path_to_pope/llava_pope_test.jsonl> \
+    --answers-file <output_path>/llava-Instruct-new.jsonl \
+    --sigma 0.1 \
+    --num-copy 10 \
+    --device cuda \
+    --max-new-tokens 128
+```
+
+
+
+**Step 2: Compute POPE Metrics**
+
+After generating responses, evaluate with the POPE scoring script:
+
+```bash
+python image_eval/pope/eval_pope.py \
+    --annotation-dir <path_to_pope/coco> \
+    --question-file <path_to_pope/llava_pope_test.jsonl> \
+    --result-file <output_path>/llava_on_pope/llava-Instruct-<mode>.jsonl
+```
+
+**Parameters:**
+
+* `--annotation-dir`: Directory containing POPE annotation files.
+* `--question-file`: File with POPE question data.
+* `--result-file`: Model output file to evaluate.
+
+
+
+### Summary
+
+* **Normal Mode:** Evaluates baseline model performance on standard benchmarks.
+* **Defense Mode (SmoothGuard):** Evaluates the model with robustness techniques applied.
+
+Together, these utility evaluations measure how well the model retains accuracy and reasoning capability while resisting adversarial perturbations.
 
 
 
